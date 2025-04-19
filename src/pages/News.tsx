@@ -8,31 +8,31 @@ const News = () => {
   const newsArticles = [
     {
       id: 1,
-      title: "New Drought-Resistant Crop Varieties Released",
-      date: "April 3, 2025",
-      summary: "The Agricultural Research Institute has announced the release of new drought-resistant varieties of maize and beans.",
-      category: "Research"
+      title: "नई सूखा-प्रतिरोधी फसल किस्में जारी",
+      date: "3 अप्रैल 2025",
+      summary: "कृषि अनुसंधान संस्थान ने मक्का और बीन्स की नई सूखा-प्रतिरोधी किस्में जारी की हैं।",
+      category: "अनुसंधान"
     },
     {
       id: 2,
-      title: "Extended Deadline for Subsidy Applications",
-      date: "April 1, 2025",
-      summary: "The Ministry of Agriculture has extended the deadline for the annual farm input subsidy program by one month.",
-      category: "Policy"
+      title: "सब्सिडी आवेदन तिथि बढ़ाई गई",
+      date: "1 अप्रैल 2025",
+      summary: "कृषि मंत्रालय ने वार्षिक कृषि इनपुट सब्सिडी कार्यक्रम की अंतिम तिथि एक माह के लिए बढ़ा दी है।",
+      category: "नीति"
     },
     {
       id: 3,
-      title: "Upcoming Farmer Training Workshops",
-      date: "March 28, 2025",
-      summary: "A series of workshops on modern farming techniques will be held across different regions starting next week.",
-      category: "Events"
+      title: "आगामी किसान प्रशिक्षण कार्यशालाएँ",
+      date: "28 मार्च 2025",
+      summary: "विभिन्न क्षेत्रों में आधुनिक कृषि तकनीकों पर कार्यशालाओं की श्रृंखला अगले सप्ताह से आयोजित की जाएगी।",
+      category: "कार्यक्रम"
     },
     {
       id: 4,
-      title: "Market Prices Update for Major Crops",
-      date: "March 25, 2025",
-      summary: "Current market trends show increased prices for maize and beans, while vegetable prices remain stable.",
-      category: "Market"
+      title: "प्रमुख फसलों के बाजार दाम अपडेट",
+      date: "25 मार्च 2025",
+      summary: "वर्तमान बाजार प्रवृत्तियाँ मक्का और बीन्स के दामों में वृद्धि दिखाती हैं, जबकि सब्ज़ियों के दाम स्थिर हैं।",
+      category: "बाज़ार"
     }
   ];
 
@@ -41,18 +41,18 @@ const News = () => {
       <div className="container mx-auto max-w-5xl">
         <Card className="shadow-lg">
           <CardHeader className="bg-green-500 text-white text-center py-6">
-            <h1 className="text-3xl font-bold">Agricultural News</h1>
-            <p className="mt-2">Stay updated with the latest developments in agriculture</p>
+            <h1 className="text-3xl font-bold">कृषि समाचार</h1>
+            <p className="mt-2">कृषि में नवीनतम विकास से अद्यतित रहें</p>
           </CardHeader>
           <CardContent className="p-6">
             <div className="mb-8 flex justify-between items-center">
-              <h2 className="text-2xl font-semibold">Latest News</h2>
+              <h2 className="text-2xl font-semibold">नवीनतम समाचार</h2>
               <div className="flex space-x-2">
-                <Button variant="outline" size="sm">All</Button>
-                <Button variant="outline" size="sm">Policy</Button>
-                <Button variant="outline" size="sm">Research</Button>
-                <Button variant="outline" size="sm">Markets</Button>
-                <Button variant="outline" size="sm">Events</Button>
+                <Button variant="outline" size="sm">सभी</Button>
+                <Button variant="outline" size="sm">नीति</Button>
+                <Button variant="outline" size="sm">अनुसंधान</Button>
+                <Button variant="outline" size="sm">बाजार</Button>
+                <Button variant="outline" size="sm">कार्यक्रम</Button>
               </div>
             </div>
             
@@ -70,7 +70,7 @@ const News = () => {
                       </div>
                       <h3 className="text-xl font-semibold mb-2">{article.title}</h3>
                       <p className="text-gray-600">{article.summary}</p>
-                      <a href="#" className="text-green-500 hover:underline mt-4 self-start">Read more →</a>
+                      <a href="#" className="text-green-500 hover:underline mt-4 self-start">और पढ़ें →</a>
                     </div>
                   </div>
                 </Card>
@@ -78,18 +78,18 @@ const News = () => {
             </div>
             
             <div className="flex justify-center mt-8">
-              <Button variant="outline" className="mr-2">Previous</Button>
+              <Button variant="outline" className="mr-2">पिछला</Button>
               <Button variant="outline" className="mx-1">1</Button>
               <Button variant="outline" className="mx-1">2</Button>
               <Button variant="outline" className="mx-1">3</Button>
-              <Button variant="outline" className="ml-2">Next</Button>
+              <Button variant="outline" className="ml-2">अगला</Button>
             </div>
           </CardContent>
           <CardFooter className="bg-gray-50 border-t p-4">
             <div className="w-full flex justify-between items-center">
-              <p className="text-gray-500">Subscribe to our newsletter for weekly updates</p>
+              <p className="text-gray-500">साप्ताहिक अपडेट के लिए हमारे न्यूज़लेटर की सदस्यता लें</p>
               <Link to="/home">
-                <Button variant="outline">Back to Home</Button>
+                <Button variant="outline">मुख्य पृष्ठ पर लौटें</Button>
               </Link>
             </div>
           </CardFooter>

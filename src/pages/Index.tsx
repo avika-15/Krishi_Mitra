@@ -5,63 +5,39 @@ import { Input } from "@/components/ui/input";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
-import LanguageToggle from "../components/LanguageToggle";
 
 const Index = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [captcha, setCaptcha] = useState("");
   const [showPassword, setShowPassword] = useState(false);
-  const [language, setLanguage] = useState<"en" | "hi">("en");
+
+  // All translations in Hindi, used directly
+  const dict = {
+    welcome: "स्वागत है...",
+    signIn: "लॉग इन करें",
+    signUp: "साइन अप करें",
+    password: "पासवर्ड",
+    otp: "ओटीपी",
+    forgot: "पासवर्ड भूल गए?",
+    captcha: "कैप्चा",
+    captchaPlaceholder: "कैप्चा दर्ज करें",
+    usernamePlaceholder: "उपयोगकर्ता नाम",
+    passwordPlaceholder: "पासवर्ड",
+    signInBtn: "लॉग इन करें",
+    checkStatus: "नामांकन स्थिति देखें",
+    createNew: "नया खाता बनाएँ",
+    details: "पंजीकरण के लिए विवरण भरें",
+    continue: "साइन अप जारी रखें",
+  };
 
   const handleSignIn = (e: React.FormEvent) => {
     e.preventDefault();
     window.location.href = "/home";
   };
 
-  // Hindi translations for login page (minimal example)
-  const t = {
-    en: {
-      welcome: "Welcome...",
-      signIn: "Sign In",
-      signUp: "Sign Up",
-      password: "Password",
-      otp: "OTP",
-      forgot: "Forgot Password?",
-      captcha: "Captcha",
-      captchaPlaceholder: "Enter Captcha",
-      usernamePlaceholder: "Username",
-      passwordPlaceholder: "Password",
-      signInBtn: "Sign In",
-      checkStatus: "Check Enrolment Status",
-      createNew: "Create a new account",
-      details: "Please fill in your details to register",
-      continue: "Continue to Sign Up",
-    },
-    hi: {
-      welcome: "स्वागत है...",
-      signIn: "लॉग इन करें",
-      signUp: "साइन अप करें",
-      password: "पासवर्ड",
-      otp: "ओटीपी",
-      forgot: "पासवर्ड भूल गए?",
-      captcha: "कैप्चा",
-      captchaPlaceholder: "कैप्चा दर्ज करें",
-      usernamePlaceholder: "उपयोगकर्ता नाम",
-      passwordPlaceholder: "पासवर्ड",
-      signInBtn: "लॉग इन करें",
-      checkStatus: "नामांकन स्थिति देखें",
-      createNew: "नया खाता बनाएँ",
-      details: "पंजीकरण के लिए विवरण भरें",
-      continue: "साइन अप जारी रखें",
-    }
-  };
-
-  const dict = t[language];
-
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-50 relative">
-      <LanguageToggle language={language} setLanguage={setLanguage} />
       <Card className="w-full max-w-md shadow-md">
         <CardContent className="pt-6">
           <h1 className="text-3xl font-bold text-center mb-6">{dict.welcome}</h1>
@@ -110,7 +86,7 @@ const Index = () => {
                     onClick={() => setShowPassword(!showPassword)}
                     className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500"
                   >
-                    {showPassword ? "👁️" : "👁️"}
+                    {"👁️"}
                   </button>
                 </div>
                 <div className="text-right">

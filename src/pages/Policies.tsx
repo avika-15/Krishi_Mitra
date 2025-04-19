@@ -11,59 +11,58 @@ const Policies = () => {
       <div className="container mx-auto max-w-4xl">
         <Card className="shadow-lg">
           <CardHeader className="bg-green-500 text-white text-center py-6">
-            <h1 className="text-3xl font-bold">Agricultural Policies</h1>
-            <p className="mt-2">Important information about support programs and regulations</p>
+            <h1 className="text-3xl font-bold">कृषि नीतियाँ</h1>
+            <p className="mt-2">समर्थन कार्यक्रमों और नियमों की महत्वपूर्ण जानकारी</p>
           </CardHeader>
           <CardContent className="p-6">
             <div className="mb-6">
               <p className="text-gray-600">
-                This section provides information on current agricultural policies, subsidies, and support programs 
-                available for farmers. Click on each item to learn more.
+                यह अनुभाग किसानों के लिए वर्तमान कृषि नीतियों, सब्सिडी और सहायता कार्यक्रमों की जानकारी प्रदान करता है। अधिक जानने के लिए प्रत्येक आइटम पर क्लिक करें।
               </p>
             </div>
             
             <Accordion type="single" collapsible className="mb-8">
               <AccordionItem value="item-1">
-                <AccordionTrigger className="text-lg">Subsidy Programs</AccordionTrigger>
+                <AccordionTrigger className="text-lg">सब्सिडी कार्यक्रम</AccordionTrigger>
                 <AccordionContent className="text-gray-600 space-y-4">
                   <div>
-                    <h4 className="font-medium text-green-600">Seed Subsidy Program</h4>
-                    <p>Government provides 50% subsidy on certified seeds for registered farmers.</p>
-                    <p className="text-sm mt-1">Eligibility: All registered smallholder farmers with less than 5 hectares of land.</p>
+                    <h4 className="font-medium text-green-600">बीज सब्सिडी कार्यक्रम</h4>
+                    <p>पंजीकृत किसानों के लिए प्रमाणित बीजों पर 50% सब्सिडी सरकार द्वारा दी जाती है।</p>
+                    <p className="text-sm mt-1">पात्रता: 5 हेक्टेयर से कम भूमि वाले सभी लघु किसान।</p>
                   </div>
                   <div>
-                    <h4 className="font-medium text-green-600">Fertilizer Support Initiative</h4>
-                    <p>Discounted fertilizer available through agricultural extension officers.</p>
-                    <p className="text-sm mt-1">Distribution centers open Monday-Friday, 8am-4pm.</p>
+                    <h4 className="font-medium text-green-600">उर्वरक सहायता पहल</h4>
+                    <p>कृषि विस्तार अधिकारियों के माध्यम से रियायती उर्वरक उपलब्ध हैं।</p>
+                    <p className="text-sm mt-1">वितरण केंद्र सोमवार-शुक्रवार, सुबह 8 से शाम 4 बजे तक खुले हैं।</p>
                   </div>
                 </AccordionContent>
               </AccordionItem>
               
               <AccordionItem value="item-2">
-                <AccordionTrigger className="text-lg">Land Use Policies</AccordionTrigger>
+                <AccordionTrigger className="text-lg">भूमि उपयोग नीतियाँ</AccordionTrigger>
                 <AccordionContent className="text-gray-600">
-                  <p>Information about current land use regulations, conservation requirements, and sustainable farming practices.</p>
+                  <p>वर्तमान भूमि उपयोग विनियमों, संरक्षण आवश्यकताओं और सतत कृषि पद्धतियों के बारे में जानकारी।</p>
                 </AccordionContent>
               </AccordionItem>
               
               <AccordionItem value="item-3">
-                <AccordionTrigger className="text-lg">Water Management</AccordionTrigger>
+                <AccordionTrigger className="text-lg">जल प्रबंधन</AccordionTrigger>
                 <AccordionContent className="text-gray-600">
-                  <p>Guidelines on irrigation rights, water conservation techniques, and drought management strategies.</p>
+                  <p>सिंचाई अधिकार, जल संरक्षण तकनीकों और सूखा प्रबंधन रणनीतियों पर दिशानिर्देश।</p>
                 </AccordionContent>
               </AccordionItem>
               
               <AccordionItem value="item-4">
-                <AccordionTrigger className="text-lg">Market Access Programs</AccordionTrigger>
+                <AccordionTrigger className="text-lg">बाजार पहुँच कार्यक्रम</AccordionTrigger>
                 <AccordionContent className="text-gray-600">
-                  <p>Information on initiatives to help farmers access markets, including cooperative marketing programs and export assistance.</p>
+                  <p>किसानों को बाजार तक पहुँचने के लिए पहल, जिसमें सहकारी विपणन कार्यक्रम और निर्यात सहायता शामिल हैं।</p>
                 </AccordionContent>
               </AccordionItem>
               
               <AccordionItem value="item-5">
-                <AccordionTrigger className="text-lg">Disaster Relief</AccordionTrigger>
+                <AccordionTrigger className="text-lg">आपदा राहत</AccordionTrigger>
                 <AccordionContent className="text-gray-600">
-                  <p>Guidelines for accessing support in case of crop failure, floods, drought, or other agricultural disasters.</p>
+                  <p>फसल विफलता, बाढ़, सूखा या अन्य कृषि आपदाओं की स्थिति में सहायता प्राप्त करने के दिशा-निर्देश।</p>
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
@@ -71,11 +70,11 @@ const Policies = () => {
             <div className="text-center">
               <Link to="/home">
                 <Button variant="outline" className="mr-4">
-                  Back to Home
+                  मुख्य पृष्ठ पर लौटें
                 </Button>
               </Link>
               <Button className="bg-green-500 hover:bg-green-600">
-                Download Policy Documents
+                नीति दस्तावेज़ डाउनलोड करें
               </Button>
             </div>
           </CardContent>
