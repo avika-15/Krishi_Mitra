@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { User, UserPlus, Calendar, FileText, Newspaper } from "lucide-react";
 import { Link } from "react-router-dom";
+import LanguageToggle from "@/components/LanguageToggle";
 
 const Home = () => {
   return (
@@ -12,7 +13,8 @@ const Home = () => {
         <div className="container mx-auto py-6 px-4">
           <div className="flex justify-between items-center">
             <h1 className="text-2xl font-bold">सीडहोप कनेक्ट</h1>
-            <div className="flex items-center space-x-3">
+            <div className="flex items-center space-x-6">
+              <LanguageToggle />
               <span>स्वागत है, उपयोगकर्ता</span>
               <Button variant="outline" className="text-white border-white hover:bg-green-700">
                 लॉगआउट
@@ -97,5 +99,4 @@ const Home = () => {
     </div>
   );
 };
-
 export default Home;

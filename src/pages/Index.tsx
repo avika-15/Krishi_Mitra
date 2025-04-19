@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
+import LanguageToggle from "@/components/LanguageToggle";
 
 const Index = () => {
   const [username, setUsername] = useState("");
@@ -38,6 +39,9 @@ const Index = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-50 relative">
+      <div className="absolute top-4 right-4 z-10">
+        <LanguageToggle />
+      </div>
       <Card className="w-full max-w-md shadow-md">
         <CardContent className="pt-6">
           <h1 className="text-3xl font-bold text-center mb-6">{dict.welcome}</h1>
@@ -147,5 +151,4 @@ const Index = () => {
     </div>
   );
 };
-
 export default Index;

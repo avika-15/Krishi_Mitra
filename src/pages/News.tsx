@@ -3,6 +3,7 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardFooter } from "@/components/ui/card";
 import { Link } from "react-router-dom";
+import LanguageToggle from "@/components/LanguageToggle";
 
 const News = () => {
   const newsArticles = [
@@ -37,7 +38,10 @@ const News = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50 py-12 px-4">
+    <div className="min-h-screen bg-gray-50 py-12 px-4 relative">
+      <div className="absolute top-4 right-4 z-10">
+        <LanguageToggle />
+      </div>
       <div className="container mx-auto max-w-5xl">
         <Card className="shadow-lg">
           <CardHeader className="bg-green-500 text-white text-center py-6">
@@ -98,5 +102,4 @@ const News = () => {
     </div>
   );
 };
-
 export default News;
