@@ -1,6 +1,6 @@
 
 import React, { useState } from "react";
-import { Globe, Language } from "lucide-react";
+import { Globe, Languages } from "lucide-react";
 
 const LANGUAGES = [
   { code: "hi", label: "हिन्दी" },
@@ -23,7 +23,7 @@ const LanguageToggle = () => {
 
   return (
     <div className="flex items-center space-x-2">
-      <Language className="w-5 h-5 text-green-700" />
+      <Languages className="w-5 h-5 text-green-700" />
       {LANGUAGES.map(({ code, label }) => (
         <button
           key={code}
@@ -38,3 +38,4 @@ const LanguageToggle = () => {
 };
 
 export default LanguageToggle;
+
