@@ -1,6 +1,6 @@
 
 import React, { useState } from "react";
-import { Globe, Languages } from "lucide-react";
+import { Languages } from "lucide-react";
 
 const LANGUAGES = [
   { code: "hi", label: "हिन्दी" },
@@ -38,4 +38,3 @@ const LanguageToggle = () => {
 };
 
 export default LanguageToggle;
-

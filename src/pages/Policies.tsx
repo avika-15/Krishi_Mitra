@@ -5,6 +5,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Link } from "react-router-dom";
 import LanguageToggle from "@/components/LanguageToggle";
+import { t } from "@/lib/langHelper";
 
 const Policies = () => {
   return (
@@ -15,8 +16,8 @@ const Policies = () => {
       <div className="container mx-auto max-w-4xl">
         <Card className="shadow-lg">
           <CardHeader className="bg-green-500 text-white text-center py-6">
-            <h1 className="text-3xl font-bold">कृषि नीतियाँ</h1>
-            <p className="mt-2">समर्थन कार्यक्रमों और नियमों की महत्वपूर्ण जानकारी</p>
+            <h1 className="text-3xl font-bold">{t("agriPolicies")}</h1>
+            <p className="mt-2">{t("programInfo")}</p>
           </CardHeader>
           <CardContent className="p-6">
             <div className="mb-6">
@@ -74,11 +75,11 @@ const Policies = () => {
             <div className="text-center">
               <Link to="/home">
                 <Button variant="outline" className="mr-4">
-                  मुख्य पृष्ठ पर लौटें
+                  {t("goHome")}
                 </Button>
               </Link>
               <Button className="bg-green-500 hover:bg-green-600">
-                नीति दस्तावेज़ डाउनलोड करें
+                {t("downloadPolicy")}
               </Button>
             </div>
           </CardContent>

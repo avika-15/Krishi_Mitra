@@ -1,10 +1,10 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Link } from "react-router-dom";
 import LanguageToggle from "@/components/LanguageToggle";
+import { t } from "@/lib/langHelper";
 
 const Calendar = () => {
   return (
@@ -15,16 +15,16 @@ const Calendar = () => {
       <div className="container mx-auto max-w-4xl">
         <Card className="shadow-lg">
           <CardHeader className="bg-green-500 text-white text-center py-6">
-            <h1 className="text-3xl font-bold">बुवाई कैलेंडर</h1>
-            <p className="mt-2">इष्टतम फसल के लिए मौसमी बुवाई गाइड</p>
+            <h1 className="text-3xl font-bold">{t("sowingCalendar")}</h1>
+            <p className="mt-2">{t("bestPractices")}</p>
           </CardHeader>
           <CardContent className="p-6">
             <Tabs defaultValue="spring">
               <TabsList className="grid grid-cols-4 mb-6">
-                <TabsTrigger value="spring">वसंत</TabsTrigger>
-                <TabsTrigger value="summer">गर्मी</TabsTrigger>
-                <TabsTrigger value="autumn">पतझड़</TabsTrigger>
-                <TabsTrigger value="winter">सर्दी</TabsTrigger>
+                <TabsTrigger value="spring">{t("spring")}</TabsTrigger>
+                <TabsTrigger value="summer">{t("summer")}</TabsTrigger>
+                <TabsTrigger value="autumn">{t("autumn")}</TabsTrigger>
+                <TabsTrigger value="winter">{t("winter")}</TabsTrigger>
               </TabsList>
               
               <TabsContent value="spring" className="space-y-4">
@@ -78,11 +78,11 @@ const Calendar = () => {
               <div className="mt-8 text-center">
                 <Link to="/home">
                   <Button variant="outline" className="mr-4">
-                    मुख्य पृष्ठ पर लौटें
+                    {t("goHome")}
                   </Button>
                 </Link>
                 <Button className="bg-green-500 hover:bg-green-600">
-                  कैलेंडर PDF डाउनलोड करें
+                  {t("downloadPDF")}
                 </Button>
               </div>
             </Tabs>

@@ -6,31 +6,13 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import LanguageToggle from "@/components/LanguageToggle";
+import { t } from "@/lib/langHelper";
 
 const Index = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [captcha, setCaptcha] = useState("");
   const [showPassword, setShowPassword] = useState(false);
-
-  // All translations in Hindi, used directly
-  const dict = {
-    welcome: "स्वागत है...",
-    signIn: "लॉग इन करें",
-    signUp: "साइन अप करें",
-    password: "पासवर्ड",
-    otp: "ओटीपी",
-    forgot: "पासवर्ड भूल गए?",
-    captcha: "कैप्चा",
-    captchaPlaceholder: "कैप्चा दर्ज करें",
-    usernamePlaceholder: "उपयोगकर्ता नाम",
-    passwordPlaceholder: "पासवर्ड",
-    signInBtn: "लॉग इन करें",
-    checkStatus: "नामांकन स्थिति देखें",
-    createNew: "नया खाता बनाएँ",
-    details: "पंजीकरण के लिए विवरण भरें",
-    continue: "साइन अप जारी रखें",
-  };
 
   const handleSignIn = (e: React.FormEvent) => {
     e.preventDefault();
@@ -44,11 +26,11 @@ const Index = () => {
       </div>
       <Card className="w-full max-w-md shadow-md">
         <CardContent className="pt-6">
-          <h1 className="text-3xl font-bold text-center mb-6">{dict.welcome}</h1>
+          <h1 className="text-3xl font-bold text-center mb-6">{t("welcome")}</h1>
           <Tabs defaultValue="signin" className="mb-6">
             <TabsList className="grid w-full grid-cols-2">
-              <TabsTrigger value="signin" className="text-green-500 font-medium">{dict.signIn}</TabsTrigger>
-              <TabsTrigger value="signup">{dict.signUp}</TabsTrigger>
+              <TabsTrigger value="signin" className="text-green-500 font-medium">{t("signIn")}</TabsTrigger>
+              <TabsTrigger value="signup">{t("signUp")}</TabsTrigger>
             </TabsList>
             <TabsContent value="signin">
               <form onSubmit={handleSignIn} className="space-y-4">
@@ -56,22 +38,22 @@ const Index = () => {
                   <Button
                     type="button"
                     variant="ghost"
-                    className={`rounded-none border-b-2 ${true ? 'border-green-500 text-green-500' : 'border-transparent'}`}
+                    className={`rounded-none border-b-2 border-green-500 text-green-500`}
                   >
-                    {dict.password}
+                    {t("password")}
                   </Button>
                   <Button
                     type="button"
                     variant="ghost"
-                    className={`rounded-none border-b-2 ${false ? 'border-green-500 text-green-500' : 'border-transparent'}`}
+                    className={`rounded-none border-b-2 border-transparent`}
                   >
-                    {dict.otp}
+                    {t("otp")}
                   </Button>
                 </div>
                 <div>
                   <Input
                     type="text"
-                    placeholder={dict.usernamePlaceholder}
+                    placeholder={t("usernamePlaceholder")}
                     value={username}
                     onChange={(e) => setUsername(e.target.value)}
                     className="mb-3"
@@ -80,7 +62,7 @@ const Index = () => {
                 <div className="relative">
                   <Input
                     type={showPassword ? "text" : "password"}
-                    placeholder={dict.passwordPlaceholder}
+                    placeholder={t("passwordPlaceholder")}
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                     className="mb-2"
@@ -95,12 +77,12 @@ const Index = () => {
                 </div>
                 <div className="text-right">
                   <a href="#" className="text-green-500 hover:underline text-sm">
-                    {dict.forgot}
+                    {t("forgot")}
                   </a>
                 </div>
                 <div className="bg-gray-100 p-4 rounded-md">
                   <div className="flex items-center justify-between mb-2">
-                    <span className="font-medium">{dict.captcha}</span>
+                    <span className="font-medium">{t("captcha")}</span>
                     <div className="flex items-center">
                       <img
                         src="/lovable-uploads/f1b1986c-8853-4015-8431-6cadbce24163.png"
@@ -114,7 +96,7 @@ const Index = () => {
                   </div>
                   <Input
                     type="text"
-                    placeholder={dict.captchaPlaceholder}
+                    placeholder={t("captchaPlaceholder")}
                     value={captcha}
                     onChange={(e) => setCaptcha(e.target.value)}
                   />
@@ -123,24 +105,24 @@ const Index = () => {
                   type="submit"
                   className="w-full bg-green-500 hover:bg-green-600 text-white"
                 >
-                  {dict.signInBtn}
+                  {t("signInBtn")}
                 </Button>
                 <Button
                   type="button"
                   variant="outline"
                   className="w-full border-green-500 text-green-500 hover:bg-green-50"
                 >
-                  {dict.checkStatus}
+                  {t("checkStatus")}
                 </Button>
               </form>
             </TabsContent>
             <TabsContent value="signup">
               <div className="text-center p-4">
-                <h3 className="text-lg mb-2">{dict.createNew}</h3>
-                <p className="mb-4 text-gray-600">{dict.details}</p>
+                <h3 className="text-lg mb-2">{t("createNew")}</h3>
+                <p className="mb-4 text-gray-600">{t("details")}</p>
                 <Link to="/home">
                   <Button className="bg-green-500 hover:bg-green-600 text-white">
-                    {dict.continue}
+                    {t("continue")}
                   </Button>
                 </Link>
               </div>
