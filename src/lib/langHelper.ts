@@ -56,7 +56,7 @@ const dict = {
     platformDesc: "कृषि समर्थन, संसाधन वितरण, और सामुदायिक सहभागिता के लिए आपका मंच। नीचे दिए गए विकल्पों का उपयोग करके हमारी सेवाओं पर नेविगेट करें।",
     registerPoor: "गरीब लोगों के लिए पंजीकरण",
     poorDesc: "अतिरिक्त सहायता के लिए योग्य लोगों के लिए विशेष पंजीकरण मार्ग।",
-    register: "पंजीकरण क��ें",
+    register: "पंजीकरण करें",
     registerDesc: "किसानों और सामुदायिक सदस्यों के लिए मानक पंजीकरण।",
     calendar: "बुवाई कैलेंडर",
     calendarDesc: "मौसमी बोआई गाइड और कृषि कैलेंडर प्राप्त करें।",
@@ -138,6 +138,19 @@ const dict = {
     marketAccessDesc: "किसानों को बाजार तक पहुँचने के लिए पहल, जिसमें सहकारी विपणन कार्यक्रम और निर्यात सहायता शामिल हैं।",
     disasterRelief: "आपदा राहत",
     disasterReliefDesc: "फसल विफलता, बाढ़, सूखा या अन्य कृषि आपदाओं की स्थिति में सहायता प्राप्त करने के दिशा-निर्देश।",
+    // Add missing About Us and Contact Us translations (Hindi)
+    aboutUs: "हमारे बारे में",
+    aboutUsText1: "सीडहोप कनेक्ट किसानों और उनके समुदायों को सुलभ जानकारी, समर्थन और कार्यक्रमों के माध्यम से सशक्त बनाने के लिए समर्पित है। हमारा मिशन आपकी सफलता में मदद करना है!",
+    aboutUsText2: "हम प्रौद्योगिकी और ग्रामीण आवश्यकताओं के बीच की खाई को पाटने का प्रयास करते हैं, जिससे प्रत्येक उपयोगकर्ता अपनी पसंदीदा भाषा में हमारी सेवाओं से लाभ उठा सके।",
+    contactUs: "संपर्क करें",
+    contactUsText: "किसी भी प्रश्न, सहायता या सुझाव के लिए हमसे संपर्क करें:",
+    thankYouFeedback: "आपकी प्रतिक्रिया के लिए धन्यवाद!",
+    feedbackReceived: "आपकी प्रतिक्रिया सबमिट कर दी गई है।",
+    feedback: "प्रतिक्रिया",
+    feedbackInfo: "हम आपके विचारों को महत्व देते हैं। कृपया हमें बताएं कि हम कैसे कर रहे हैं!",
+    name: "नाम",
+    message: "संदेश",
+    submit: "सबमिट",
   },
   en: {
     // Common
@@ -278,6 +291,19 @@ const dict = {
     marketAccessDesc: "Initiatives to help farmers access markets, including cooperative marketing and export support.",
     disasterRelief: "Disaster Relief",
     disasterReliefDesc: "Guidelines for obtaining assistance in case of crop failure, flood, drought, or other agricultural disasters.",
+    // Add missing About Us and Contact Us translations (English)
+    aboutUs: "About Us",
+    aboutUsText1: "SeedHope Connect is dedicated to empowering farmers and their communities through accessible information, support, and programs. Our mission is to help you succeed!",
+    aboutUsText2: "We strive to bridge the gap between technology and rural needs, ensuring every user can benefit from our services in their preferred language.",
+    contactUs: "Contact Us",
+    contactUsText: "For any inquiries, support, or suggestions, contact us at:",
+    thankYouFeedback: "Thank you for your feedback!",
+    feedbackReceived: "Your feedback has been submitted.",
+    feedback: "Feedback",
+    feedbackInfo: "We value your thoughts. Please let us know how we're doing!",
+    name: "Name",
+    message: "Message",
+    submit: "Submit",
   }
 };
 
