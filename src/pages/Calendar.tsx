@@ -61,19 +61,100 @@ const Calendar = () => {
                 </div>
               </TabsContent>
               
-              <TabsContent value="summer">
+              <TabsContent value="summer" className="space-y-4">
                 <h3 className="text-xl font-semibold">{t("calendarSummerGuide")}</h3>
-                <p className="mt-2 text-gray-600">{t("calendarSummerMsg")}</p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="border rounded-md p-4">
+                    <h4 className="font-medium text-lg text-green-600">{t("calendarSpringVeg")}</h4>
+                    <ul className="list-disc pl-5 mt-2 space-y-1">
+                      <li>Lady Finger (Okra) - June, July</li>
+                      <li>Bitter Gourd - June</li>
+                      <li>Bottle Gourd - June, July</li>
+                      <li>Brinjal (Eggplant) - June, July</li>
+                      <li>Green Chillies - Throughout Summer</li>
+                    </ul>
+                  </div>
+                  <div className="border rounded-md p-4">
+                    <h4 className="font-medium text-lg text-green-600">{t("calendarSpringCrops")}</h4>
+                    <ul className="list-disc pl-5 mt-2 space-y-1">
+                      <li>Paddy (Rice) - June</li>
+                      <li>Cotton - Early June</li>
+                      <li>Maize - June</li>
+                      <li>Groundnut - June, July</li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="bg-green-50 border border-green-200 rounded-md p-4 mt-4">
+                  <h4 className="font-medium text-green-600">Summer Sowing Tips</h4>
+                  <ul className="list-disc pl-5 mt-2">
+                    <li>Ensure fields are irrigated before sowing summer crops.</li>
+                    <li>Mulch to conserve soil moisture and regulate soil temperature.</li>
+                    <li>Choose short duration, heat-tolerant crop varieties.</li>
+                  </ul>
+                </div>
               </TabsContent>
               
-              <TabsContent value="autumn">
+              <TabsContent value="autumn" className="space-y-4">
                 <h3 className="text-xl font-semibold">{t("calendarAutumnGuide")}</h3>
-                <p className="mt-2 text-gray-600">{t("calendarAutumnMsg")}</p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="border rounded-md p-4">
+                    <h4 className="font-medium text-lg text-green-600">{t("calendarSpringVeg")}</h4>
+                    <ul className="list-disc pl-5 mt-2 space-y-1">
+                      <li>Cauliflower - September</li>
+                      <li>Spinach - September, October</li>
+                      <li>Radish - September, October</li>
+                      <li>Peas - October, November</li>
+                    </ul>
+                  </div>
+                  <div className="border rounded-md p-4">
+                    <h4 className="font-medium text-lg text-green-600">{t("calendarSpringCrops")}</h4>
+                    <ul className="list-disc pl-5 mt-2 space-y-1">
+                      <li>Wheat - October, November</li>
+                      <li>Mustard - October</li>
+                      <li>Barley - November</li>
+                      <li>Lentil - November</li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="bg-green-50 border border-green-200 rounded-md p-4 mt-4">
+                  <h4 className="font-medium text-green-600">Autumn Sowing Tips</h4>
+                  <ul className="list-disc pl-5 mt-2">
+                    <li>Sow before onset of winter and use early maturing varieties.</li>
+                    <li>Fertilize soil after the rainy season for healthy crop establishment.</li>
+                    <li>Watch for aphids and early frost.</li>
+                  </ul>
+                </div>
               </TabsContent>
               
-              <TabsContent value="winter">
+              <TabsContent value="winter" className="space-y-4">
                 <h3 className="text-xl font-semibold">{t("calendarWinterGuide")}</h3>
-                <p className="mt-2 text-gray-600">{t("calendarWinterMsg")}</p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="border rounded-md p-4">
+                    <h4 className="font-medium text-lg text-green-600">{t("calendarSpringVeg")}</h4>
+                    <ul className="list-disc pl-5 mt-2 space-y-1">
+                      <li>Carrot - December, January</li>
+                      <li>Turnip - December</li>
+                      <li>Cabbage - December, January</li>
+                      <li>Onion - December</li>
+                    </ul>
+                  </div>
+                  <div className="border rounded-md p-4">
+                    <h4 className="font-medium text-lg text-green-600">{t("calendarSpringCrops")}</h4>
+                    <ul className="list-disc pl-5 mt-2 space-y-1">
+                      <li>Wheat - December, January</li>
+                      <li>Gram (Chana) - December</li>
+                      <li>Barley - January</li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="bg-green-50 border border-green-200 rounded-md p-4 mt-4">
+                  <h4 className="font-medium text-green-600">Winter Sowing Tips</h4>
+                  <ul className="list-disc pl-5 mt-2">
+                    <li>Protect crops from frost by mulching or row covers.</li>
+                    <li>Irrigate during dry winter spells but avoid waterlogging.</li>
+                    <li>Ensure timely sowing to avoid yield loss.</li>
+                  </ul>
+                </div>
               </TabsContent>
               
               <div className="mt-8 text-center">

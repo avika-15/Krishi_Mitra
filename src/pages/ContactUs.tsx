@@ -1,8 +1,8 @@
-
 import React from "react";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import LanguageToggle from "@/components/LanguageToggle";
 import { t } from "@/lib/langHelper";
+import FeedbackForm from "@/components/FeedbackForm";
 
 const ContactUs = () => (
   <div className="min-h-screen bg-gray-50 py-12 px-4 relative">
@@ -25,6 +25,11 @@ const ContactUs = () => (
           <p>
             <span className="font-bold">{t("phone") || "Phone"}:</span> +91-12345-67890
           </p>
+          <div className="mt-8">
+            <h2 className="text-lg font-semibold mb-1">{t("feedback")}</h2>
+            <p className="text-gray-600">{t("feedbackInfo")}</p>
+            <FeedbackForm />
+          </div>
         </CardContent>
       </Card>
     </div>
