@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
@@ -28,51 +29,51 @@ const Calendar = () => {
               </TabsList>
               
               <TabsContent value="spring" className="space-y-4">
-                <h3 className="text-xl font-semibold">वसंत बुवाई गाइड (मार्च-मई)</h3>
+                <h3 className="text-xl font-semibold">{t("calendarSpringGuide")}</h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="border rounded-md p-4">
-                    <h4 className="font-medium text-lg text-green-600">सब्ज़ियाँ</h4>
+                    <h4 className="font-medium text-lg text-green-600">{t("calendarSpringVeg")}</h4>
                     <ul className="list-disc pl-5 mt-2 space-y-1">
-                      <li>टमाटर - प्रारंभिक मार्च (इनडोर बुवाई)</li>
-                      <li>मिर्च - मध्य मार्च</li>
-                      <li>लेट्यूस - मार्च के अंत से मई</li>
-                      <li>गाजर - अप्रैल से</li>
-                      <li>फलियाँ - प्रारंभिक मई</li>
+                      <li>{t("calendarSpringVeg1")}</li>
+                      <li>{t("calendarSpringVeg2")}</li>
+                      <li>{t("calendarSpringVeg3")}</li>
+                      <li>{t("calendarSpringVeg4")}</li>
+                      <li>{t("calendarSpringVeg5")}</li>
                     </ul>
                   </div>
                   <div className="border rounded-md p-4">
-                    <h4 className="font-medium text-lg text-green-600">अनाज</h4>
+                    <h4 className="font-medium text-lg text-green-600">{t("calendarSpringCrops")}</h4>
                     <ul className="list-disc pl-5 mt-2 space-y-1">
-                      <li>मक्का - अप्रैल के मध्य से अंत</li>
-                      <li>चावल - प्रारंभिक अप्रैल (अंतिम पाला के बाद)</li>
-                      <li>गेहूं - मार्च में प्रारंभिक वसंत किस्म</li>
-                      <li>जौ - मार्च से अप्रैल</li>
+                      <li>{t("calendarSpringGrain1")}</li>
+                      <li>{t("calendarSpringGrain2")}</li>
+                      <li>{t("calendarSpringGrain3")}</li>
+                      <li>{t("calendarSpringGrain4")}</li>
                     </ul>
                   </div>
                 </div>
                 <div className="bg-green-50 border border-green-200 rounded-md p-4 mt-4">
-                  <h4 className="font-medium text-green-600">वसंत बुवाई टिप्स</h4>
+                  <h4 className="font-medium text-green-600">{t("calendarSpringTipsTitle")}</h4>
                   <ul className="list-disc pl-5 mt-2">
-                    <li>अधिकांश वसंत बुवाई के लिए मिट्टी का तापमान 10°C होने की प्रतीक्षा करें</li>
-                    <li>बुआई से पहले मिट्टी में कम्पोस्ट और जैविक पदार्थ मिलाएँ</li>
-                    <li>अंतिम पाले से बचाव के लिए प्रारंभिक बुवाई हेतु रो कवर का उपयोग करें</li>
+                    <li>{t("calendarSpringTip1")}</li>
+                    <li>{t("calendarSpringTip2")}</li>
+                    <li>{t("calendarSpringTip3")}</li>
                   </ul>
                 </div>
               </TabsContent>
               
               <TabsContent value="summer">
-                <h3 className="text-xl font-semibold">ग्रीष्मकालीन बुवाई गाइड (जून-अगस्त)</h3>
-                <p className="mt-2 text-gray-600">ग्रीष्मकालीन बुवाई की जानकारी यहाँ होगी...</p>
+                <h3 className="text-xl font-semibold">{t("calendarSummerGuide")}</h3>
+                <p className="mt-2 text-gray-600">{t("calendarSummerMsg")}</p>
               </TabsContent>
               
               <TabsContent value="autumn">
-                <h3 className="text-xl font-semibold">पतझड़ बुवाई गाइड (सितंबर-नवंबर)</h3>
-                <p className="mt-2 text-gray-600">पतझड़ बुवाई की जानकारी यहाँ होगी...</p>
+                <h3 className="text-xl font-semibold">{t("calendarAutumnGuide")}</h3>
+                <p className="mt-2 text-gray-600">{t("calendarAutumnMsg")}</p>
               </TabsContent>
               
               <TabsContent value="winter">
-                <h3 className="text-xl font-semibold">शीतकालीन बुवाई गाइड (दिसंबर-फरवरी)</h3>
-                <p className="mt-2 text-gray-600">शीतकालीन बुवाई की जानकारी यहाँ होगी...</p>
+                <h3 className="text-xl font-semibold">{t("calendarWinterGuide")}</h3>
+                <p className="mt-2 text-gray-600">{t("calendarWinterMsg")}</p>
               </TabsContent>
               
               <div className="mt-8 text-center">
@@ -92,4 +93,5 @@ const Calendar = () => {
     </div>
   );
 };
+
 export default Calendar;

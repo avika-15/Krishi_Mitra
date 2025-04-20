@@ -1,4 +1,3 @@
-
 const dict = {
   hi: {
     // Common
@@ -57,7 +56,7 @@ const dict = {
     platformDesc: "कृषि समर्थन, संसाधन वितरण, और सामुदायिक सहभागिता के लिए आपका मंच। नीचे दिए गए विकल्पों का उपयोग करके हमारी सेवाओं पर नेविगेट करें।",
     registerPoor: "गरीब लोगों के लिए पंजीकरण",
     poorDesc: "अतिरिक्त सहायता के लिए योग्य लोगों के लिए विशेष पंजीकरण मार्ग।",
-    register: "पंजीकरण करें",
+    register: "पंजीकरण क��ें",
     registerDesc: "किसानों और सामुदायिक सदस्यों के लिए मानक पंजीकरण।",
     calendar: "बुवाई कैलेंडर",
     calendarDesc: "मौसमी बोआई गाइड और कृषि कैलेंडर प्राप्त करें।",
@@ -96,7 +95,49 @@ const dict = {
     next: "अगला",
     newsletter: "साप्ताहिक अपडेट के लिए हमारे न्यूज़लेटर की सदस्यता लें",
     // 404
-    notFound: "अरे! पृष्ठ नहीं मिला"
+    notFound: "अरे! पृष्ठ नहीं मिला",
+
+    // Calendar-specific text
+    calendarSpringGuide: "वसंत बुवाई गाइड (मार्च-मई)",
+    calendarSpringVeg: "सब्ज़ियाँ",
+    calendarSpringCrops: "अनाज",
+    calendarSpringVeg1: "टमाटर - प्रारंभिक मार्च (इनडोर बुवाई)",
+    calendarSpringVeg2: "मिर्च - मध्य मार्च",
+    calendarSpringVeg3: "लेट्यूस - मार्च के अंत से मई",
+    calendarSpringVeg4: "गाजर - अप्रैल से",
+    calendarSpringVeg5: "फलियाँ - प्रारंभिक मई",
+    calendarSpringGrain1: "मक्का - अप्रैल के मध्य से अंत",
+    calendarSpringGrain2: "चावल - प्रारंभिक अप्रैल (अंतिम पाला के बाद)",
+    calendarSpringGrain3: "गेहूं - मार्च में प्रारंभिक वसंत किस्म",
+    calendarSpringGrain4: "जौ - मार्च से अप्रैल",
+    calendarSpringTipsTitle: "वसंत बुवाई टिप्स",
+    calendarSpringTip1: "अधिकांश वसंत बुवाई के लिए मिट्टी का तापमान 10°C होने की प्रतीक्षा करें",
+    calendarSpringTip2: "बुआई से पहले मिट्टी में कम्पोस्ट और जैविक पदार्थ मिलाएँ",
+    calendarSpringTip3: "अंतिम पाले से बचाव के लिए प्रारंभिक बुवाई हेतु रो कवर का उपयोग करें",
+    calendarSummerGuide: "ग्रीष्मकालीन बुवाई गाइड (जून-अगस्त)",
+    calendarSummerMsg: "ग्रीष्मकालीन बुवाई की जानकारी यहाँ होगी...",
+    calendarAutumnGuide: "पतझड़ बुवाई गाइड (सितंबर-नवंबर)",
+    calendarAutumnMsg: "पतझड़ बुवाई की जानकारी यहाँ होगी...",
+    calendarWinterGuide: "शीतकालीन बुवाई गाइड (दिसंबर-फरवरी)",
+    calendarWinterMsg: "शीतकालीन बुवाई की जानकारी यहाँ होगी...",
+
+    // Policies-specific text
+    policiesIntro: "यह अनुभाग किसानों के लिए वर्तमान कृषि नीतियों, सब्सिडी और सहायता कार्यक्रमों की जानकारी प्रदान करता है। अधिक जानने के लिए प्रत्येक आइटम पर क्लिक करें।",
+    subsidyPrograms: "सब्सिडी कार्यक्रम",
+    seedSubsidy: "बीज सब्सिडी कार्यक्रम",
+    seedSubsidyDesc: "पंजीकृत किसानों के लिए प्रमाणित बीजों पर 50% सब्सिडी सरकार द्वारा दी जाती है।",
+    seedSubsidyEligibility: "पात्रता: 5 हेक्टेयर से कम भूमि वाले सभी लघु किसान।",
+    fertilizerAid: "उर्वरक सहायता पहल",
+    fertilizerAidDesc: "कृषि विस्तार अधिकारियों के माध्यम से रियायती उर्वरक उपलब्ध हैं।",
+    fertilizerAidTime: "वितरण केंद्र सोमवार-शुक्रवार, सुबह 8 से शाम 4 बजे तक खुले हैं।",
+    landPolicy: "भूमि उपयोग नीतियाँ",
+    landPolicyDesc: "वर्तमान भूमि उपयोग विनियमों, संरक्षण आवश्यकताओं और सतत कृषि पद्धतियों के बारे में जानकारी।",
+    waterMgmt: "जल प्रबंधन",
+    waterMgmtDesc: "सिंचाई अधिकार, जल संरक्षण तकनीकों और सूखा प्रबंधन रणनीतियों पर दिशानिर्देश।",
+    marketAccess: "बाजार पहुँच कार्यक्रम",
+    marketAccessDesc: "किसानों को बाजार तक पहुँचने के लिए पहल, जिसमें सहकारी विपणन कार्यक्रम और निर्यात सहायता शामिल हैं।",
+    disasterRelief: "आपदा राहत",
+    disasterReliefDesc: "फसल विफलता, बाढ़, सूखा या अन्य कृषि आपदाओं की स्थिति में सहायता प्राप्त करने के दिशा-निर्देश।",
   },
   en: {
     // Common
@@ -193,8 +234,50 @@ const dict = {
     prev: "Prev",
     next: "Next",
     newsletter: "Subscribe to our newsletter for weekly updates",
-    //404
-    notFound: "Oops! Page not found"
+    // 404
+    notFound: "Oops! Page not found",
+
+    // Calendar-specific text (EN)
+    calendarSpringGuide: "Spring Sowing Guide (March-May)",
+    calendarSpringVeg: "Vegetables",
+    calendarSpringCrops: "Grains",
+    calendarSpringVeg1: "Tomato - Early March (sow indoors)",
+    calendarSpringVeg2: "Chili - Mid March",
+    calendarSpringVeg3: "Lettuce - End of March through May",
+    calendarSpringVeg4: "Carrot - From April",
+    calendarSpringVeg5: "Beans - Early May",
+    calendarSpringGrain1: "Maize - Mid to late April",
+    calendarSpringGrain2: "Rice - Early April (after last frost)",
+    calendarSpringGrain3: "Wheat - Early spring variety in March",
+    calendarSpringGrain4: "Barley - March to April",
+    calendarSpringTipsTitle: "Spring Sowing Tips",
+    calendarSpringTip1: "Wait for soil temperature to reach 10°C for most spring sowings",
+    calendarSpringTip2: "Incorporate compost and organic matter before sowing",
+    calendarSpringTip3: "Use row covers for early sowing to protect from late frosts",
+    calendarSummerGuide: "Summer Sowing Guide (June-August)",
+    calendarSummerMsg: "Summer sowing information will appear here...",
+    calendarAutumnGuide: "Autumn Sowing Guide (September-November)",
+    calendarAutumnMsg: "Autumn sowing information will appear here...",
+    calendarWinterGuide: "Winter Sowing Guide (December-February)",
+    calendarWinterMsg: "Winter sowing information will appear here...",
+
+    // Policies-specific text (EN)
+    policiesIntro: "This section provides information on current agricultural policies, subsidies, and support programs for farmers. Click each item to learn more.",
+    subsidyPrograms: "Subsidy Programs",
+    seedSubsidy: "Seed Subsidy Program",
+    seedSubsidyDesc: "Certified seeds for registered farmers are subsidized at 50% by the government.",
+    seedSubsidyEligibility: "Eligibility: All small farmers with less than 5 hectares of land.",
+    fertilizerAid: "Fertilizer Aid Initiative",
+    fertilizerAidDesc: "Discounted fertilizers are available through agricultural extension officers.",
+    fertilizerAidTime: "Distribution centers are open Monday–Friday, 8am–4pm.",
+    landPolicy: "Land Use Policies",
+    landPolicyDesc: "Information on current land use regulations, conservation requirements, and sustainable farming practices.",
+    waterMgmt: "Water Management",
+    waterMgmtDesc: "Guidelines on irrigation rights, water conservation techniques, and drought management strategies.",
+    marketAccess: "Market Access Programs",
+    marketAccessDesc: "Initiatives to help farmers access markets, including cooperative marketing and export support.",
+    disasterRelief: "Disaster Relief",
+    disasterReliefDesc: "Guidelines for obtaining assistance in case of crop failure, flood, drought, or other agricultural disasters.",
   }
 };
 
