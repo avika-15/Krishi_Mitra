@@ -1,8 +1,7 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { User, UserPlus, Calendar as CalIcon, FileText, Newspaper } from "lucide-react";
+import { User, UserPlus, Calendar as CalIcon, FileText, Newspaper, Bot } from "lucide-react";
 import { Link } from "react-router-dom";
 import LanguageToggle from "@/components/LanguageToggle";
 import { t } from "@/lib/langHelper";
@@ -85,6 +84,17 @@ const Home = () => {
             <Link to="/news" className="mt-auto">
               <Button className="bg-green-500 hover:bg-green-600 w-full">
                 {t("readNews")}
+              </Button>
+            </Link>
+          </Card>
+
+          <Card className="shadow-md hover:shadow-lg transition-shadow p-6 flex flex-col items-center text-center">
+            <Bot size={48} className="text-green-500 mb-4" />
+            <h3 className="text-xl font-semibold mb-2">{t("farmingAssistant")}</h3>
+            <p className="text-gray-600 mb-4">{t("chatbotDesc") || "Get instant answers about farming and agricultural policies"}</p>
+            <Link to="/chat-assistant" className="mt-auto">
+              <Button className="bg-green-500 hover:bg-green-600 w-full">
+                {t("chatNow") || "Chat Now"}
               </Button>
             </Link>
           </Card>

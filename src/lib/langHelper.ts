@@ -111,7 +111,7 @@ const dict = {
     calendarSpringGrain3: "गेहूं - मार्च में प्रारंभिक वसंत किस्म",
     calendarSpringGrain4: "जौ - मार्च से अप्रैल",
     calendarSpringTipsTitle: "वसंत बुवाई टिप्स",
-    calendarSpringTip1: "अधिकांश वसंत बुवाई के लिए मिट्टी का तापमान 10°C होने की प्रतीक्षा करें",
+    calendarSpringTip1: "अधिकांश वसंत बुवाई के लिए मिट्टी का तापमान 10°C होने की प्रतीक्��ा करें",
     calendarSpringTip2: "बुआई से पहले मिट्टी में कम्पोस्ट और जैविक पदार्थ मिलाएँ",
     calendarSpringTip3: "अंतिम पाले से बचाव के लिए प्रारंभिक बुवाई हेतु रो कवर का उपयोग करें",
     calendarSummerGuide: "ग्रीष्मकालीन बुवाई गाइड (जून-अगस्त)",
@@ -152,6 +152,13 @@ const dict = {
     message: "संदेश",
     submit: "सबमिट",
     required: "आवश्यक है",
+    // Farming Assistant
+    farmingAssistant: "कृषि सहायक",
+    chatNow: "अभी चैट करें",
+    chatbotDesc: "खेती और कृषि नीतियों के बारे में तुरंत जवाब प्राप्त करें",
+    chatbotWelcome: "नमस्ते! मैं आपका कृषि सहायक हूं। भारत में खेती या कृषि नीतियों के बारे में कुछ भी पूछें!",
+    thinking: "सोच रहा हूं...",
+    askAboutFarming: "खेती के बारे में पूछें...",
   },
   en: {
     // Common
@@ -306,6 +313,13 @@ const dict = {
     message: "Message",
     submit: "Submit",
     required: "is required",
+    // Farming Assistant
+    farmingAssistant: "Farming Assistant",
+    chatNow: "Chat Now",
+    chatbotDesc: "Get instant answers about farming and agricultural policies",
+    chatbotWelcome: "Hello! I'm your farming assistant. Ask me anything about farming or agricultural policies in India!",
+    thinking: "Thinking...",
+    askAboutFarming: "Ask about farming...",
   }
 };
 
