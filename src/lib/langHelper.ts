@@ -151,6 +151,7 @@ const dict = {
     name: "नाम",
     message: "संदेश",
     submit: "सबमिट",
+    required: "आवश्यक है",
   },
   en: {
     // Common
@@ -304,6 +305,7 @@ const dict = {
     name: "Name",
     message: "Message",
     submit: "Submit",
+    required: "is required",
   }
 };
 
