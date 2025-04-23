@@ -33,22 +33,6 @@ const Index = () => {
             </TabsList>
             <TabsContent value="signin">
               <form onSubmit={handleSignIn} className="space-y-4">
-                <div className="flex items-center justify-center space-x-4 mb-4">
-                  <Button
-                    type="button"
-                    variant="ghost"
-                    className={`rounded-none border-b-2 border-green-500 text-green-500`}
-                  >
-                    {t("password")}
-                  </Button>
-                  <Button
-                    type="button"
-                    variant="ghost"
-                    className={`rounded-none border-b-2 border-transparent`}
-                  >
-                    {t("otp")}
-                  </Button>
-                </div>
                 <div>
                   <Input
                     type="text"
@@ -112,3 +96,4 @@ const Index = () => {
   );
 };
 export default Index;
+
