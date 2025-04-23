@@ -11,7 +11,6 @@ import { t } from "@/lib/langHelper";
 const Index = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const [captcha, setCaptcha] = useState("");
   const [showPassword, setShowPassword] = useState(false);
 
   const handleSignIn = (e: React.FormEvent) => {
@@ -79,27 +78,6 @@ const Index = () => {
                   <a href="#" className="text-green-500 hover:underline text-sm">
                     {t("forgot")}
                   </a>
-                </div>
-                <div className="bg-gray-100 p-4 rounded-md">
-                  <div className="flex items-center justify-between mb-2">
-                    <span className="font-medium">{t("captcha")}</span>
-                    <div className="flex items-center">
-                      <img
-                        src="/lovable-uploads/f1b1986c-8853-4015-8431-6cadbce24163.png"
-                        alt="Captcha"
-                        className="h-8 mr-2"
-                      />
-                      <Button size="sm" variant="outline" className="h-8 w-8 p-0">
-                        ↻
-                      </Button>
-                    </div>
-                  </div>
-                  <Input
-                    type="text"
-                    placeholder={t("captchaPlaceholder")}
-                    value={captcha}
-                    onChange={(e) => setCaptcha(e.target.value)}
-                  />
                 </div>
                 <Button
                   type="submit"
