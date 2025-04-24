@@ -1,1 +1,2 @@
-Krishi Mitra is digital policy registry website for farmers. It also has other features like sowing calender, farming realated news,and farming related polices authorised from government. 
+
+Krishi Mitra is a digital policy registry website for farmers. It offers features like sowing calendar, farming-related news, and farming-related policies authorized by the government.

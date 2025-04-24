@@ -51,9 +51,9 @@ const dict = {
     familySizePlaceholder: "परिवार के सदस्यों की संख्या दर्ज करें",
     submitApplication: "आवेदन सबमिट करें",
     // Home
-    homeTitle: "सीडहोप कनेक्ट",
-    homeWelcome: "सीडहोप कनेक्ट में आपका स्वागत है",
-    platformDesc: "कृषि समर्थन, संसाधन वितरण, और सामुदायिक सहभागिता के लिए आपका मंच। नीचे दिए गए विकल्पों का उपयोग करके हमारी सेवाओं पर नेविगेट करें।",
+    homeTitle: "कृषि मित्र",
+    homeWelcome: "कृषि मित्र में आपका स्वागत है",
+    platformDesc: "कृषि समर्थन, संसाधन वितरण और सामुदायिक सहभागिता के लिए आपका मंच। नीचे दिए गए विकल्पों का उपयोग करके हमारी सेवाओं पर नेविगेट करें।",
     registerPoor: "गरीब लोगों के लिए पंजीकरण",
     poorDesc: "अतिरिक्त सहायता के लिए योग्य लोगों के लिए विशेष पंजीकरण मार्ग।",
     register: "पंजीकरण करें",
@@ -67,7 +67,7 @@ const dict = {
     readNews: "समाचार पढ़ें",
     logout: "लॉगआउट",
     userWelcome: "स्वागत है, उपयोगकर्ता",
-    copyright: "&copy; 2025 सीडहोप कनेक्ट. सर्वाधिकार सुरक्षित।",
+    copyright: "&copy; 2025 कृषि मित्र. सर्वाधिकार सुरक्षित।",
     // Calendar
     sowingCalendar: "बुवाई कैलेंडर",
     bestPractices: "इष्टतम फसल के लिए मौसमी बुवाई गाइड",
@@ -111,7 +111,7 @@ const dict = {
     calendarSpringGrain3: "गेहूं - मार्च में प्रारंभिक वसंत किस्म",
     calendarSpringGrain4: "जौ - मार्च से अप्रैल",
     calendarSpringTipsTitle: "वसंत बुवाई टिप्स",
-    calendarSpringTip1: "अधिकांश वसंत बुवाई के लिए मिट्टी का तापमान 10°C होने की प्रतीक्��ा करें",
+    calendarSpringTip1: "अधिकांश वसंत बुवाई के लिए मिट्टी का तापमान 10°C होने की प्रतीक्���ा करें",
     calendarSpringTip2: "बुआई से पहले मिट्टी में कम्पोस्ट और जैविक पदार्थ मिलाएँ",
     calendarSpringTip3: "अंतिम पाले से बचाव के लिए प्रारंभिक बुवाई हेतु रो कवर का उपयोग करें",
     calendarSummerGuide: "ग्रीष्मकालीन बुवाई गाइड (जून-अगस्त)",
@@ -140,7 +140,7 @@ const dict = {
     disasterReliefDesc: "फसल विफलता, बाढ़, सूखा या अन्य कृषि आपदाओं की स्थिति में सहायता प्राप्त करने के दिशा-निर्देश।",
     // Add missing About Us and Contact Us translations (Hindi)
     aboutUs: "हमारे बारे में",
-    aboutUsText1: "सीडहोप कनेक्ट किसानों और उनके समुदायों को सुलभ जानकारी, समर्थन और कार्यक्रमों के माध्यम से सशक्त बनाने के लिए समर्पित है। हमारा मिशन आपकी सफलता में मदद करना है!",
+    aboutUsText1: "कृषि मित्र किसानों और उनके समुदायों को सुलभ जानकारी, समर्थन और कार्यक्रमों के माध्यम से सशक्त बनाने के लिए समर्पित है। हमारा मिशन आपकी सफलता में मदद करना है!",
     aboutUsText2: "हम प्रौद्योगिकी और ग्रामीण आवश्यकताओं के बीच की खाई को पाटने का प्रयास करते हैं, जिससे प्रत्येक उपयोगकर्ता अपनी पसंदीदा भाषा में हमारी सेवाओं से लाभ उठा सके।",
     contactUs: "संपर्क करें",
     contactUsText: "किसी भी प्रश्न, सहायता या सुझाव के लिए हमसे संपर्क करें:",
@@ -212,8 +212,8 @@ const dict = {
     submitApplication: "Submit Application",
 
     // Home
-    homeTitle: "SeedHope Connect",
-    homeWelcome: "Welcome to SeedHope Connect",
+    homeTitle: "Krishi Mitra",
+    homeWelcome: "Welcome to Krishi Mitra",
     platformDesc: "Your platform for agricultural support, resource distribution, and community engagement. Use the options below to navigate our services.",
     registerPoor: "Register for Poor",
     poorDesc: "Special registration path for eligible people for additional assistance.",
@@ -228,7 +228,7 @@ const dict = {
     readNews: "Read News",
     logout: "Logout",
     userWelcome: "Welcome, User",
-    copyright: "&copy; 2025 SeedHope Connect. All rights reserved.",
+    copyright: "&copy; 2025 Krishi Mitra. All rights reserved.",
     // Calendar
     sowingCalendar: "Sowing Calendar",
     bestPractices: "Seasonal sowing guide for optimal crops",
@@ -301,7 +301,7 @@ const dict = {
     disasterReliefDesc: "Guidelines for obtaining assistance in case of crop failure, flood, drought, or other agricultural disasters.",
     // Add missing About Us and Contact Us translations (English)
     aboutUs: "About Us",
-    aboutUsText1: "SeedHope Connect is dedicated to empowering farmers and their communities through accessible information, support, and programs. Our mission is to help you succeed!",
+    aboutUsText1: "Krishi Mitra is dedicated to empowering farmers and their communities through accessible information, support, and programs. Our mission is to help you succeed!",
     aboutUsText2: "We strive to bridge the gap between technology and rural needs, ensuring every user can benefit from our services in their preferred language.",
     contactUs: "Contact Us",
     contactUsText: "For any inquiries, support, or suggestions, contact us at:",
